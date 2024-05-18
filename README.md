@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-    <img src="assets/logo.png" alt="Logo" width="371" height="185">
+    <img src="assets/logo.jpeg" alt="Logo" height="185">
 
 <h3 align="center">ChronoCraft</h3>
 
