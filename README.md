@@ -17,7 +17,7 @@
 ---
 
 
-## Introduction
+## ✍️ Introduction ✍️
 In this hackathon project proposal, we present ChronoCraft, a timeline creation software that generates timelines for a given dataset. Our team aims to provide a user-friendly tool that allows users to visualize and analyze chronological data in a meaningful way.
 
 ## 💡 Inspiration 💡
@@ -43,7 +43,7 @@ To achieve our objectives, we will follow these steps:
 * [![Next][Next.js]][Next-url]
 >more to be added
 
-##  ⚠️ Challenges we ran into ⚠️
+## ⚠️ Challenges we ran into ⚠️
 *Some challenges*
 
 ## ⏭️ Future Plans for ChronoCraft ⏭️
