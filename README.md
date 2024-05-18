@@ -61,7 +61,7 @@ Amin
 
 Beomsoo
 
-Abtin
+Abtin Abbaspour, a third-year Geomatics student at the University of Waterloo, experienced data scientist and entreperneur, interested in ML, DL, and NLP.
 
 
 
