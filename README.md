@@ -13,36 +13,6 @@
 <div align="center">
 </div>
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-    <a href="#introduction">Introduction</a>
-    <ul>
-      <li><a href="#inspiration">Inspiration</a></li>
-      <li><a href="#what-it-does">What It Does</a></li>
-      <li><a href="#how-we-built-it">How We Built It</a></li>
-      <li><a href="#challenges">Challenges We Ran Into</a></li>
-      <li><a href="#future-plans">Future Plans for ChronoCraft</a></li>
-      <li><a href="#team">About the Team</a></li>
-    </ul>
-    </li>
-    <li><a href="#getting-started">Getting Started</a></li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
 
 ---
 
@@ -67,6 +37,11 @@ To achieve our objectives, we will follow these steps:
 3. Implement algorithms to handle different types of chronological data, such as dates, durations, and intervals.
 4. Test and refine the software to ensure accuracy and usability with Sauce Labs.
 5. Document the development process and provide clear instructions for users.
+
+## 📐 Built With 🔬
+
+* [![Next][Next.js]][Next-url]
+>more to be added
 
 ##  ⚠️ Challenges we ran into ⚠️
 *Some challenges*
