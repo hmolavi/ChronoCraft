@@ -3,15 +3,15 @@ import { create } from "zustand";
 type DataStore = {
   loading: boolean;
   empty: boolean;
-  timeline: TimelineType[];
+  timeline: string;
   setEmpty: (empty: boolean) => void;
-  setTimeline: (timeline: TimelineType[]) => void;
+  setTimeline: (timeline: string) => void;
   setLoading: (loading: boolean) => void;
 };
 
 export const useTimelineStore = create<DataStore>((set) => ({
   loading: false,
-  timeline: [],
+  timeline: "",
   empty: true,
   setTimeline: (timeline) => set({ timeline }),
   setEmpty: (empty) => set({ empty }),
