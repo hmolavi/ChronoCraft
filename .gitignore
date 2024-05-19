@@ -1,2 +1,4 @@
 node_modules
 /frontend/hooks/.env
+.env
+.env.*
