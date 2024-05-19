@@ -47,7 +47,7 @@ const useGetSearchEvent = () => {
       setTimeline(events);
       console.log(events);
     } catch (error) {
-      console.error("Error:", error.message);
+      console.error("Error:", (error as Error).message);
     }
   };
 
