@@ -5,7 +5,7 @@
   <p align="center">
     Crafting Data into Stories, One Timeline at a Time
     <br />
-    <a href="www.chronocraft.wiki">www.chronocraft.wiki</a>
+    <a href="https://chronocraft.wiki">www.chronocraft.wiki</a>
     <br />
     <a href="https://youtu.be/CsF0szB0zlw">Demo</a>
   </p>
@@ -13,11 +13,10 @@
 <div align="center">
 </div>
 
-
 ---
 
-
 ## ☝️ What is ChronoCraft ☝️
+
 ChronoCraft is an innovative timeline creation software that revolutionizes the way we visualize and analyze chronological data. Our team is dedicated to providing a user-friendly tool that empowers users to effortlessly generate timelines for any search result. With ChronoCraft, you can transform raw data into captivating stories, uncovering valuable insights and patterns along the way. Whether you're a researcher, historian, or simply curious about the passage of time, ChronoCraft is the ultimate companion for crafting data into compelling narratives.
 
 ## 💡 Inspiration 💡
@@ -28,13 +27,13 @@ The resource that became our core inspiration was the ["Timeline of Poets & Scie
 
 Upon entering the app, you are greeted with an intuitive timeline research tool designed to empower users with advanced analytical capabilities. This tool allows users to visualize any information that involves a time flow. For instance, venture capital financial flows for investors, historical events for students, and company research for business professionals.
 
-We utilize AI to summarize and filter information effortlessly. Additionally, thanks to Neurelo's flexible database maintenance, we have implemented a high-quality information database. Users don't need to create complex filters or search on Google. Simply type in natural language, and we handle the rest, providing seamless visualization. 
+We utilize AI to summarize and filter information effortlessly. Additionally, thanks to Neurelo's flexible database maintenance, we have implemented a high-quality information database. Users don't need to create complex filters or search on Google. Simply type in natural language, and we handle the rest, providing seamless visualization.
 
 ## 🛠️ How We Built It 🛠️
 
-For the frontend, we chose ReactJS and NextJS as our powerful and flexible JavaScript frameworks. ReactJS provides a component-based architecture, while NextJS offers server-side rendering and routing capabilities, enhancing the performance and user experience of the application. 
+For the frontend, we chose ReactJS and NextJS as our powerful and flexible JavaScript frameworks. ReactJS provides a component-based architecture, while NextJS offers server-side rendering and routing capabilities, enhancing the performance and user experience of the application.
 
-We also utilized TimelineJS for creating a cleaner and more visually appealing user interface.On the backend, we utilized Neurelo for managing and deploying serverless functions, allowing us to easily handle backend logic and generate APIs. 
+We also utilized TimelineJS for creating a cleaner and more visually appealing user interface.On the backend, we utilized Neurelo for managing and deploying serverless functions, allowing us to easily handle backend logic and generate APIs.
 
 We also leveraged MongoDB as our database using MongoDB Atlas, a fully managed cloud database service, to efficiently store and retrieve data.
 
@@ -43,6 +42,7 @@ By combining these technologies, we created a robust and scalable application th
 Finally, we deployed our application to our application to the domain name we got from go daddy. You can visit the demo at [chronocraft.wiki](chronocraft.wiki).
 
 ## 📐 Built With 🔬
+
 - [![Next.js](https://img.shields.io/badge/-Next.js-black?style=flat&logo=next.js&logoColor=white)](Next-url)
 - [![Neorelo](https://img.shields.io/badge/-Neorelo-yellow?style=flat&logo=neorelo&logoColor=white)](Neorelo-url)
 - [![React](https://img.shields.io/badge/-React-blue?style=flat&logo=react&logoColor=white)](React-url)
@@ -50,9 +50,9 @@ Finally, we deployed our application to our application to the domain name we go
 - [![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](TailwindCSS-url)
 - [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](JavaScript-url)
 
-
 ## 🏆 Accomplishments That We're Proud Of 🏆
-- We are particularly proud of completing a Full Stack app that seamlessly 
+
+- We are particularly proud of completing a Full Stack app that seamlessly
 - Learning Neurelo was an interesting and exciting journey. We had to familiarize ourselves with the Neurelo Schema Editor, understand its documentation, and overcome unfamiliar erros. It required time and effort to become proficient in using Neurelo effectively for our project. However, the learning process was rewarding as it expanded our knowledge and skills in working with this new awesome tool.
 
 ## ⚠️ Challenges we ran into ⚠️
@@ -66,7 +66,7 @@ While our initial focus is on creating a functional prototype for the hackathon,
 
 - Due to the numerous issues we had with the frontend api calls, we were not able to make a complete implementation with the database via api. If given more time we would first finish the development of api calls.
 - Scaling the application to a larger user base and integrating with platforms like Wikipedia, allowing for the chronological ordering of information.
-Partnership with Adobe Express; enhancing the software with advanced visualization options such as interactive charts and graphs. 
+  Partnership with Adobe Express; enhancing the software with advanced visualization options such as interactive charts and graphs.
 - Currently, the database is utilized to store users' search history. However, there is great potential for leveraging the gathered data in various ways in the future.
 - Expanding the software to support different languages and localization.
 
@@ -80,7 +80,8 @@ Beomsoo, a Human Interface Designer and Frontend Engineer based in Toronto. Love
 
 Abtin Abbaspour, a third-year Geomatics student at the University of Waterloo, experienced data scientist and entreperneur, interested in ML, DL, and NLP.
 
---- 
+---
+
 \
 ChronoCraft aims to simplify the process of creating timelines and provide a powerful tool for visualizing chronological data. We are excited about the potential of this project and look forward to bringing it to life during the hackathon.
 
