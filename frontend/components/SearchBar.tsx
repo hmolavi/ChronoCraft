@@ -12,7 +12,7 @@ export const SearchBar = () => {
 
         <button
           onClick={() =>
-            getSearchEvent("World War 1", 2)
+            getSearchEvent({queryTopic:"World War 1", numEvents:2})
               .then((res) => {
                 console.log(res);
               })
