@@ -55,7 +55,7 @@ While our initial focus is on creating a functional prototype for the hackathon,
 - Expanding the software to support different languages and localization.
 
 ## 💙 About the Team 💙
-Hossein Molavi, a third-year Computer Engineering student at the University of Waterloo, is deeply fascinated by the intricate dance between computer hardware and software algorithms. His passion lies in exploring frontiers where these realms converge
+Hossein Molavi, a 3rd year Computer Engineering student at the University of Waterloo, is deeply fascinated by the intricate dance between computer hardware and software algorithms. His passion lies in exploring frontiers where these realms converge
 
 Amin
 
