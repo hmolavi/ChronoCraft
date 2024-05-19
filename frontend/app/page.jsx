@@ -3,7 +3,9 @@
 import { SearchBar } from "@/components/SearchBar";
 import { TopNav } from "@/components/TopNav";
 import { useTimelineStore } from "@/store/zustand";
-import Timeline from "timelinejs-react";
+import dynamic from "next/dynamic";
+
+const Timeline = dynamic(() => import("timelinejs-react"), { ssr: false });
 
 const Quotes = [
   {
