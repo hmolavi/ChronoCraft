@@ -1,9 +1,7 @@
 import getSearchEvent from "@/hooks/getSearchEvent";
 import { useState } from "react";
-import { useState } from "react";
 
 export const SearchBar = () => {
-  const [searchQuery, setSearchQuery] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
   return (
     <div className="fixed bottom-0 w-full m-auto p-4 flex items-center justify-center">
@@ -12,8 +10,6 @@ export const SearchBar = () => {
         <input
           placeholder="Search every history"
           className="w-full pl-2 bg-transparent outline-none text-black focus:border-none focus:ring-0"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
