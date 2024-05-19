@@ -21,7 +21,7 @@ const useGetSearchEvent = () => {
         { role: "user", content: query },
       ],
       temperature: 0.7,
-      max_tokens: 1000,
+      max_tokens: 10000,
       top_p: 1.0,
       frequency_penalty: 0.0,
       presence_penalty: 0.0,
