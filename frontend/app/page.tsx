@@ -1,126 +1,8 @@
 "use client";
 
 import { SearchBar } from "@/components/SearchBar";
-import { useState } from "react";
+import { useTimelineStore } from "@/store/zustand";
 import Timeline from "timelinejs-react";
-
-const events: Slide[] = [
-  {
-    start_date: {
-      year: 1914,
-      month: 6,
-      day: 28,
-    },
-    media: {
-      url: "(url of thumbnail image)",
-      caption: "",
-      link: "",
-    },
-    end_date: {
-      year: 1914,
-      month: 6,
-      day: 28,
-    },
-    unique_id: "",
-    text: {
-      headline: "Assassination of Archduke Franz Ferdinand",
-      text: "The assassination of Archduke Franz Ferdinand of Austria-Hungary by a Serbian nationalist led to the outbreak of World War 1.",
-    },
-    background: {},
-  },
-  {
-    start_date: {
-      year: 1916,
-      month: 7,
-      day: 1,
-    },
-    media: {
-      url: "(url of thumbnail image)",
-      caption: "",
-      link: "",
-    },
-    end_date: {
-      year: 1916,
-      month: 11,
-      day: 18,
-    },
-    unique_id: "",
-    text: {
-      headline: "Battle of the Somme",
-      text: "One of the bloodiest battles in human history, the Battle of the Somme claimed over one million casualties and marked a turning point in the war.",
-    },
-    background: {},
-  },
-  {
-    start_date: {
-      year: 1919,
-      month: 6,
-      day: 28,
-    },
-    media: {
-      url: "(url of thumbnail image)",
-      caption: "",
-      link: "",
-    },
-    end_date: {
-      year: 1919,
-      month: 6,
-      day: 28,
-    },
-    unique_id: "",
-    text: {
-      headline: "Treaty of Versailles",
-      text: "The Treaty of Versailles, signed at the end of World War 1, imposed punitive conditions on Germany and laid the foundation for future conflicts.",
-    },
-    background: {},
-  },
-  {
-    start_date: {
-      year: 1916,
-      month: 2,
-      day: 21,
-    },
-    media: {
-      url: "(url of thumbnail image)",
-      caption: "",
-      link: "",
-    },
-    end_date: {
-      year: 1916,
-      month: 12,
-      day: 18,
-    },
-    unique_id: "",
-    text: {
-      headline: "Battle of Verdun",
-      text: "The Battle of Verdun was the longest and one of the deadliest battles in World War 1, resulting in tremendous loss of life on both sides.",
-    },
-    background: {},
-  },
-  {
-    start_date: {
-      year: 1917,
-      month: 3,
-      day: 8,
-    },
-    media: {
-      url: "(url of thumbnail image)",
-      caption: "",
-      link: "",
-    },
-    end_date: {
-      year: 1917,
-      month: 11,
-      day: 7,
-    },
-    unique_id: "",
-    text: {
-      headline: "Russian Revolution",
-      text: "The Russian Revolution of 1917 led to the overthrow of the Romanov dynasty and the establishment of a communist government in Russia, eventually leading to its withdrawal from World War 1.",
-    },
-    background: {},
-  },
-];
 
 const Quotes = [
   {
@@ -150,9 +32,9 @@ const Quotes = [
 ];
 
 const Home = () => {
-  const [loading, setLoading] = useState<boolean>(false);
-  const [empty, setEmpty] = useState<boolean>(true);
   const randomQuote = Quotes[Math.floor(Math.random() * Quotes.length)];
+  const { empty, loading, timeline } = useTimelineStore();
+
   return (
     <div>
       <h1>My Timeline</h1>
@@ -178,7 +60,7 @@ const Home = () => {
               style={{ height: "calc(100vh - 240px)" }}
             />
           }
-          events={events}
+          events={timeline}
           options={{
             timenav_position: "top",
             hash_bookmark: true,
