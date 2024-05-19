@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "declaration": true,
+      "declarationMap": true,
+      "emitDeclarationOnly": true,
+      "outDir": "dist/js",
+      "jsx": "react",
+      "lib": [
+        "es2017",
+        "dom"
+      ],
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "skipLibCheck": true,
+      "strict": true,
+      "strictNullChecks": false,
+      "target": "es5"
+    },
+    "include": [
+      "./src/index.d.ts",
+    ]
+}
