@@ -39,7 +39,7 @@ const Home = () => {
     <div>
       <h1>My Timeline</h1>
       <SearchBar />
-      {/* {empty && !loading && (
+       {empty && !loading && (
         <div
           className="w-full gap-4 flex flex-col items-center justify-center"
           style={{ height: "calc(100vh - 80px)" }}
@@ -51,8 +51,8 @@ const Home = () => {
             {randomQuote.person}
           </p>
         </div>
-      )} */}
-      {/* {loading && ( */}
+      )} 
+       {loading && ( 
       <div
         role="status"
         className="w-full flex items-center justify-center"
@@ -76,7 +76,7 @@ const Home = () => {
         </svg>
         <span className="sr-only">Loading...</span>
       </div>
-      {/* )} */}
+       )}
       {!empty && !loading && (
         <Timeline
           target={
