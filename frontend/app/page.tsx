@@ -143,6 +143,10 @@ const Quotes = [
     text: "The entire history of mankind is, in any case, nothing but a prolonged fight to the death for the conquest of universal prestige and absolute power.",
     person: "Albert Camus, French-Algerian author",
   },
+  {
+    text: "If you want to love your country, you will read history, and if you want someone to love your country, you will read history.",
+    person: "Chaeho Shin, Korean independence activist",
+  },
 ];
 
 const Home = () => {
