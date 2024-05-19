@@ -1,13 +1,23 @@
 export const TopNav = () => {
   return (
     <div className="fixed w-full top-0 z-10 flex items-center justify-between flex-wrap p-4">
-      <div className="flex items-center flex-shrink-0 text-neutral-800 mr-6">
+      <div
+        className="flex items-center flex-shrink-0 text-neutral-800 mr-6"
+        onClick={() => {
+          window.location.href = "/";
+        }}
+      >
         <span className="font-semibold text-xl tracking-tight">
           ChronoCraft
         </span>
       </div>
 
-      <div className="flex gap-2">
+      <div
+        className="flex gap-2"
+        onClick={() => {
+          alert("We're working on it! Check back soon!");
+        }}
+      >
         <a
           href="#"
           className="text-sm px-3 py-2 flex gap-2 items-center justify-center leading-none border rounded-full text-neutral-800 border-neutral-800 hover:border-transparent active:scale-95 transition-all hover:text-white  hover:bg-neutral-800"

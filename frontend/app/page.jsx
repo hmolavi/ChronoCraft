@@ -41,7 +41,6 @@ const Home = () => {
   return (
     <div>
       <TopNav />
-      <h1>My Timeline</h1>
       <SearchBar />
       {empty && !loading && (
         <div
@@ -49,7 +48,7 @@ const Home = () => {
           style={{ height: "calc(100vh - 80px)" }}
         >
           <h2 className="italic font-regular text-xl text-neutral-700 max-w-[420px] text-center">
-            {`"${randomQuote.text}"`}
+            &quot;{randomQuote.text}&quot;
           </h2>
           <p className="text-md text-neutral-500 max-w-[420px] text-center">
             {randomQuote.person}
