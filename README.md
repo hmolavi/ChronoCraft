@@ -5,7 +5,9 @@
   <p align="center">
     Crafting Data into Stories, One Timeline at a Time
     <br />
-    <a href="https://youtu.be/CsF0szB0zlw">Demo Video</a>
+    <a href="www.chronocraft.wiki">www.chronocraft.wiki</a>
+    <br />
+    <a href="https://youtu.be/CsF0szB0zlw">Demo</a>
   </p>
 </div>
 <div align="center">
@@ -37,6 +39,8 @@ We also utilized TimelineJS for creating a cleaner and more visually appealing u
 We also leveraged MongoDB as our database using MongoDB Atlas, a fully managed cloud database service, to efficiently store and retrieve data.
 
 By combining these technologies, we created a robust and scalable application that delivers a seamless user experience while effectively handling data management and processing.
+
+Finally, we deployed our application to our application to the domain name we got from go daddy. You can visit the demo at [chronocraft.wiki](chronocraft.wiki).
 
 ## 📐 Built With 🔬
 - [![Next.js](https://img.shields.io/badge/-Next.js-black?style=flat&logo=next.js&logoColor=white)](Next-url)
