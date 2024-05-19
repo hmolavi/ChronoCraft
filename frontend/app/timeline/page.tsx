@@ -1,77 +1,121 @@
 "use client";
 
+import { SearchBar } from "@/components/SearchBar";
 import Timeline from "timelinejs-react";
 
 const events: Slide[] = [
   {
     start_date: {
-      year: 2021,
+      year: 1914,
       month: 6,
-      day: 5,
+      day: 28,
     },
     media: {
-      url: "https://picsum.photos/200/300",
-      thumbnail: "https://picsum.photos/200/300",
+      url: "(url of thumbnail image)",
       caption: "",
       link: "",
     },
     end_date: {
-      year: 2021,
+      year: 1914,
+      month: 6,
+      day: 28,
+    },
+    unique_id: "",
+    text: {
+      headline: "Assassination of Archduke Franz Ferdinand",
+      text: "The assassination of Archduke Franz Ferdinand of Austria-Hungary by a Serbian nationalist led to the outbreak of World War 1.",
+    },
+    background: {},
+  },
+  {
+    start_date: {
+      year: 1916,
       month: 7,
-      day: 4,
+      day: 1,
     },
-    unique_id: "1",
+    media: {
+      url: "(url of thumbnail image)",
+      caption: "",
+      link: "",
+    },
+    end_date: {
+      year: 1916,
+      month: 11,
+      day: 18,
+    },
+    unique_id: "",
     text: {
-      headline: "Event1",
-      text: "",
+      headline: "Battle of the Somme",
+      text: "One of the bloodiest battles in human history, the Battle of the Somme claimed over one million casualties and marked a turning point in the war.",
     },
     background: {},
   },
   {
     start_date: {
-      year: 2021,
-      month: 8,
-      day: 4,
+      year: 1919,
+      month: 6,
+      day: 28,
     },
     media: {
-      url: "https://picsum.photos/200/300",
-      thumbnail: "https://picsum.photos/200/300",
+      url: "(url of thumbnail image)",
       caption: "",
       link: "",
     },
     end_date: {
-      year: 2021,
-      month: 9,
-      day: 5,
+      year: 1919,
+      month: 6,
+      day: 28,
     },
-    unique_id: "2",
+    unique_id: "",
     text: {
-      headline: "Event2",
-      text: "",
+      headline: "Treaty of Versailles",
+      text: "The Treaty of Versailles, signed at the end of World War 1, imposed punitive conditions on Germany and laid the foundation for future conflicts.",
     },
     background: {},
   },
   {
     start_date: {
-      year: 2021,
-      month: 8,
-      day: 4,
+      year: 1916,
+      month: 2,
+      day: 21,
     },
     media: {
-      url: "https://picsum.photos/200/300",
-      thumbnail: "https://picsum.photos/200/300",
+      url: "(url of thumbnail image)",
       caption: "",
       link: "",
     },
     end_date: {
-      year: 2021,
-      month: 8,
-      day: 5,
+      year: 1916,
+      month: 12,
+      day: 18,
     },
-    unique_id: "3",
+    unique_id: "",
     text: {
-      headline: "Event3",
-      text: "",
+      headline: "Battle of Verdun",
+      text: "The Battle of Verdun was the longest and one of the deadliest battles in World War 1, resulting in tremendous loss of life on both sides.",
+    },
+    background: {},
+  },
+  {
+    start_date: {
+      year: 1917,
+      month: 3,
+      day: 8,
+    },
+    media: {
+      url: "(url of thumbnail image)",
+      caption: "",
+      link: "",
+    },
+    end_date: {
+      year: 1917,
+      month: 11,
+      day: 7,
+    },
+    unique_id: "",
+    text: {
+      headline: "Russian Revolution",
+      text: "The Russian Revolution of 1917 led to the overthrow of the Romanov dynasty and the establishment of a communist government in Russia, eventually leading to its withdrawal from World War 1.",
     },
     background: {},
   },
@@ -80,14 +124,7 @@ const events: Slide[] = [
 const TimelinePage = () => {
   return (
     <div>
-      <h1>My Timeline</h1>
-      <div className="max-w-[320px] p-4 flex h-full bg-slate-50">
-        <div className="w-full h-full">
-          <p>When do you want to travel to?</p>
-          <input placeholder="Insert Query" />
-          <button>Browse</button>
-        </div>
-      </div>
+      <SearchBar />
       <Timeline
         target={<div className="timeline" style={{ height: 600 }} />}
         events={events}
