@@ -35,6 +35,15 @@ const Home = () => {
   const randomQuote = Quotes[Math.floor(Math.random() * Quotes.length)];
   const { empty, loading, timeline } = useTimelineStore();
 
+  const timelineString: string = JSON.stringify(timeline); // Convert events array to JSON string
+
+  // Use the timelineString variable instead of the timeline variable
+  const events: Slide[] = timeline;
+
+  console.log(timeline);
+
+  console.log(timelineString);
+
   return (
     <div>
       <h1>My Timeline</h1>
@@ -60,7 +69,7 @@ const Home = () => {
               style={{ height: "calc(100vh - 240px)" }}
             />
           }
-          events={timeline}
+          events={timelineString}
           options={{
             timenav_position: "top",
             hash_bookmark: true,
