@@ -1,9 +1,7 @@
 <br />
 <div align="center">
-    <img src="assets/logo.jpeg" alt="Logo" height="185">
-
-<h3 align="center">ChronoCraft</h3>
-
+  <img src="assets/logo.jpeg" alt="Logo" height="185">
+  <h3 align="center">ChronoCraft</h3>
   <p align="center">
     Crafting Data into Stories, One Timeline at a Time
     <br />
