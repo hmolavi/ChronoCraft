@@ -13,7 +13,7 @@ const useGetSearchEvent = () => {
     console.log("Calling the OpenAI API");
     const systemMessage =
       "You are an assistant that only writes JSON. Do not write normal text.";
-    const query = `Give me a list of ${numEvents} of the most significant historical events during ${queryTopic} formatted in the following way. Only fill in the brackets:\n {"start_date": {"year": (start year), "month": (start month), "day": (start day),}, "media": { "url": "", "caption": "", "link": "",}, "end_date": { "year": (end year), "month": (end month), "day": (end day),}, "unique_id": "(unique id)", "text": { "headline": "(title of the event)", "text": "(concise summary of the event)",}, "background": {},}`;
+    const query = `Please generate a list of ${numEvents} of the most significant historical events related to "${queryTopic}". \n\nFormat each event strictly as follows:\n\n{\n  "start_date": {"year": (start year), "month": (start month), "day": (start day)},\n  "media": {"url": "", "caption": "", "link": ""},\n  "end_date": {"year": (end year), "month": (end month), "day": (end day)},\n  "unique_id": "", \n  "text": {\n    "headline": "(Title of the Event)",\n    "text": "(Concise Summary of the Event)"\n  },\n  "background": {}\n}`;
 
     const APIBody = {
       model: "gpt-3.5-turbo-0125",
@@ -21,7 +21,7 @@ const useGetSearchEvent = () => {
         { role: "system", content: systemMessage },
         { role: "user", content: query },
       ],
-      temperature: 0.6,
+      temperature: 0.7,
       max_tokens: 1000,
       top_p: 1.0,
       frequency_penalty: 0.0,
