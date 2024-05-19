@@ -2,7 +2,7 @@ const axios = require('axios');
 
 async function getEvents(queryTopi, numEvents) {
     systemMessage = 'You are an assistant that only writes JSON. Do not write normal text.';
-    query = `Give me a list of ${numEvents} of the most significant historical event during ${queryTopic} formatted in the following way filling in the brackets\: \n{\nstart_date: {year: (start year), month: (start month), day: (start day),},\nmedia: { url: "", caption: "", link: "",},\nend_date: { year: (end year), month: (end month), day: (end day),},\n\n unique_id: "",\n text: { headline: "(title of the event)", text: "(concise summary of the event)",},\nbackground: {},},`;
+    query = `Give me a list of ${numEvents} of the most significant historical events during ${queryTopic} formatted in the following way filling in the brackets\: \n{\nstart_date: {year: (start year), month: (start month), day: (start day),},\nmedia: { url: "", caption: "", link: "",},\nend_date: { year: (end year), month: (end month), day: (end day),},\n\n unique_id: "",\n text: { headline: "(title of the event)", text: "(concise summary of the event)",},\nbackground: {},},`;
 
     try {
         const response = await axios.post('https://api.openai.com/v1/engines/davinci-codex/completions', {
