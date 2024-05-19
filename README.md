@@ -60,6 +60,7 @@ While our initial focus is on creating a functional prototype for the hackathon,
 - Integrating with external data sources to automatically populate timelines with relevant information.
 - Adding collaboration features to allow multiple users to work on the same timeline simultaneously.
 - Expanding the software to support different languages and localization.
+- Creating a many to many correlation for future optomization
 
 ## 💙 About the Team 💙
 Hossein Molavi, a 3rd year Computer Engineering student at the University of Waterloo, is deeply fascinated by the intricate dance between computer hardware and software algorithms. His passion lies in exploring frontiers where these realms converge
