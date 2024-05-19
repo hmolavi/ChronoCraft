@@ -1,5 +1,4 @@
 import { useTimelineStore } from "@/store/zustand";
-import { v4 as uuidv4 } from "uuid";
 
 interface Props {
   queryTopic: string;
@@ -42,12 +41,7 @@ const useGetSearchEvent = () => {
       );
 
       const data = await response.json();
-      let events = data.choices[0].message.content;
-      events = JSON.parse(events).map((event) => ({
-        ...event,
-        unique_id: uuidv4(),
-      }));
-
+      const events = data.choices[0].message.content;
       setLoading(false);
       setEmpty(false);
       setTimeline(events);
