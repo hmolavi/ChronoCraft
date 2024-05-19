@@ -15,16 +15,16 @@ export const SearchBar = () => {
         />
         <button
           onClick={() => {
-            console.log("Search query:", searchQuery);
-            getSearchEvent({ queryTopic: searchQuery, numEvents: 3 })
+            console.log("Search Query:", searchQuery);
+            getSearchEvent({queryTopic: searchQuery, numEvents:3})
               .then((res) => {
                 console.log(res);
               })
               .catch((err) => {
                 console.error(err);
-              });
+              })
           }}
-          className="bg-neutral-200 text-neutral-800 font-medium text-sm px-3 py-2 rounded-lg hover:bg-neutral-300 active:scale-95 transition"
+          className="bg-neutral-200 text-neutral-800 font-medium text-sm px-3 py-2 rounded-lg"
         >
           Search
         </button>
