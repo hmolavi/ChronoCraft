@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export const SearchBar = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const { loading, setLoading } = useTimelineStore();
+  const { loading, setLoading, empty } = useTimelineStore();
   const getSearchEvent = useGetSearchEvent();
 
   const placeholder = [
@@ -22,7 +22,7 @@ export const SearchBar = () => {
 
   return (
     <>
-      <div className="fixed bottom-0 w-full m-auto p-4 flex flex-col gap-2 items-center justify-center">
+      <div className="fixed bottom-0 w-full m-auto p-4 flex flex-col gap-4 items-center justify-center">
         <div className="bg-neutral-50 border flex border-solid border-black/10 w-full max-w-[480px] gap-2 p-2 rounded-2xl shadow-sm">
           {/* <p className="text-lg">When do you want to travel to?</p> */}
           <input

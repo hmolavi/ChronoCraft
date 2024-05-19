@@ -12,7 +12,7 @@ const useGetSearchEvent = () => {
     console.log("Calling the OpenAI API");
     const systemMessage =
       "You are an assistant that only writes JSON. Do not write normal text.";
-    const query = `Please generate a list of ${numEvents} of the most significant historical periods or events related to "${queryTopic}". \n\nFormat each event strictly as follows:\n\n{\n  "start_date": {"year": (start year), "month": (start month), "day": (start day)},\n  "media": {"url": "", "caption": "", "link": ""},\n  "end_date": {"year": (end year), "month": (end month), "day": (end day)},\n  "unique_id": "", \n  "text": {\n    "headline": "(Title of the Event)",\n    "text": "(Informative summary of the event or period, including important people and locations)"\n  },\n  "background": {}\n}`;
+    const query = `Please generate a list of ${numEvents} of the most significant historical periods or events related to "${queryTopic}". \n\nFormat each event strictly as follows:\n\n{\n  "start_date": {"year": (start year), "month": (start month), "day": (start day)},\n "end_date": {"year": (end year), "month": (end month), "day": (end day)},\n  "unique_id": "", \n  "text": {\n    "headline": "(Title of the Event)",\n    "text": "(Informative summary of the event or period, including important people and locations)"\n  },\n  "background": {}\n}`;
 
     const APIBody = {
       model: "gpt-3.5-turbo-0125",

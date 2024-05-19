@@ -4,6 +4,8 @@ import { SearchBar } from "@/components/SearchBar";
 import { TopNav } from "@/components/TopNav";
 import { useTimelineStore } from "@/store/zustand";
 import dynamic from "next/dynamic";
+import { createRef } from "react";
+import { createFileName, useScreenshot } from "use-react-screenshot";
 
 const Timeline = dynamic(() => import("timelinejs-react"), { ssr: false });
 
@@ -37,10 +39,35 @@ const Quotes = [
 const Home = () => {
   const randomQuote = Quotes[Math.floor(Math.random() * Quotes.length)];
   const { empty, loading, timeline } = useTimelineStore();
+  const ref = createRef(null);
+
+  const [image, takeScreenShot] = useScreenshot({
+    type: "image/jpeg",
+    quality: 1.0,
+  });
+
+  const download = (image, { name = "img", extension = "jpg" } = {}) => {
+    const a = document.createElement("a");
+    a.href = image;
+    a.download = createFileName(extension, name);
+    a.click();
+  };
+
+  const downloadScreenshot = () => takeScreenShot(ref.current).then(download);
 
   return (
     <div>
       <TopNav />
+      {!loading && !empty && (
+        <div className="w-full flex items-center justify-center">
+          <button
+            onClick={downloadScreenshot}
+            className={`fixed bottom-24 rounded-full bg-neutral-800 text-white font-regular text-sm px-3 py-2 hover:bg-neutral-700 active:scale-95 transition-all flex flex-row items-center justify-center gap-2`}
+          >
+            Download Timeline
+          </button>
+        </div>
+      )}
       <SearchBar />
       {empty && !loading && (
         <div
@@ -81,23 +108,25 @@ const Home = () => {
         </div>
       )}
       {!empty && !loading && (
-        <Timeline
-          target={
-            <div
-              className="timeline"
-              style={{ height: "calc(100vh - 240px)" }}
-            />
-          }
-          events={JSON.parse(timeline)}
-          options={{
-            timenav_position: "top",
-            hash_bookmark: true,
-            initial_zoom: 1,
-            scale_factor: 1,
-            debug: true,
-            default_bg_color: "green",
-          }} // optional
-        />
+        <div ref={ref}>
+          <Timeline
+            target={
+              <div
+                className="timeline"
+                style={{ height: "calc(100vh - 240px)" }}
+              />
+            }
+            events={JSON.parse(timeline)}
+            options={{
+              timenav_position: "top",
+              hash_bookmark: true,
+              initial_zoom: 1,
+              scale_factor: 1,
+              debug: true,
+              default_bg_color: "green",
+            }} // optional
+          />
+        </div>
       )}
     </div>
   );
