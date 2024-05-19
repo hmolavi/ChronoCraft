@@ -10,8 +10,13 @@ export const SearchBar = () => {
   const placeholder = [
     "Search every History",
     "History of Computer",
+    "History of Science",
+    "History of Philosophy",
     "History of Hackathon",
-    "History of Apple",
+    "History of Spacecraft",
+    "History of Architecture",
+    "History of Art",
+    "History of Music",
     "History of War",
   ];
 

@@ -1,8 +1,8 @@
 export const TopNav = () => {
   return (
-    <div className="fixed w-full top-0 z-10 flex items-center justify-between flex-wrap p-4">
+    <div className="fixed w-full top-0 z-10 flex items-center sm:justify-between flex-col sm:flex-row justify-center gap-2 flex-wrap p-4">
       <div
-        className="flex items-center flex-shrink-0 text-neutral-800 mr-6"
+        className="flex items-center flex-shrink-0 text-neutral-800"
         onClick={() => {
           window.location.href = "/";
         }}
@@ -13,7 +13,7 @@ export const TopNav = () => {
       </div>
 
       <div
-        className="flex gap-2"
+        className="flex gap-2 "
         onClick={() => {
           alert("We're working on it! Check back soon!");
         }}
