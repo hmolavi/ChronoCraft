@@ -38,11 +38,45 @@ const Home = () => {
   const timelineString: string = JSON.stringify(timeline); // Convert events array to JSON string
 
   // Use the timelineString variable instead of the timeline variable
-  const events: Slide[] = timeline;
+  const events: Slide[] = [
+    {
+      start_date: { year: 1919, month: 3, day: 1 },
+      media: { url: "", caption: "", link: "" },
+      end_date: { year: 1919, month: 4, day: 10 },
+      unique_id: "",
+      text: {
+        headline: "March 1st Movement",
+        text: "A nationwide protest against Japanese colonial rule in Korea, sparked by students and activists calling for independence.",
+      },
+      background: {},
+    },
+    {
+      start_date: { year: 1950, month: 6, day: 25 },
+      media: { url: "", caption: "", link: "" },
+      end_date: { year: 1953, month: 7, day: 27 },
+      unique_id: "",
+      text: {
+        headline: "Korean War",
+        text: "A war fought between North Korea, supported by China and the Soviet Union, and South Korea, supported by the United Nations and the United States.",
+      },
+      background: {},
+    },
+    {
+      start_date: { year: 1988, month: 9, day: 17 },
+      media: { url: "", caption: "", link: "" },
+      end_date: { year: 1988, month: 10, day: 2 },
+      unique_id: "",
+      text: {
+        headline: "Seoul Summer Olympics",
+        text: "The 1988 Summer Olympics held in Seoul, South Korea, which marked South Korea's rise as a major economic and cultural power.",
+      },
+      background: {},
+    },
+  ];
 
-  console.log(timeline);
-
-  console.log(timelineString);
+  // console.log("timeline", JSON.parse(timeline));
+  console.log("events", events);
+  console.log("timelineString", timelineString);
 
   return (
     <div>
@@ -69,7 +103,7 @@ const Home = () => {
               style={{ height: "calc(100vh - 240px)" }}
             />
           }
-          events={timelineString}
+          events={JSON.parse(timeline)}
           options={{
             timenav_position: "top",
             hash_bookmark: true,
