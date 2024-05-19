@@ -9,10 +9,9 @@ export const SearchBar = () => {
           placeholder="Search every history"
           className="w-full pl-2 bg-transparent outline-none text-black focus:border-none focus:ring-0"
         />
-
         <button
           onClick={() =>
-            getSearchEvent("World War 1", 2)
+            getSearchEvent({ queryTopic: "World War 1", numEvents: 3 })
               .then((res) => {
                 console.log(res);
               })
