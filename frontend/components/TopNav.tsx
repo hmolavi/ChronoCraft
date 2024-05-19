@@ -10,7 +10,7 @@ export const TopNav = () => {
       <div className="flex gap-2">
         <a
           href="#"
-          className="text-sm px-3 py-2 flex gap-2 items-center justify-center leading-none border rounded-full text-neutral-800 border-neutral-800 hover:border-transparent hover:text-white  hover:bg-neutral-800"
+          className="text-sm px-3 py-2 flex gap-2 items-center justify-center leading-none border rounded-full text-neutral-800 border-neutral-800 hover:border-transparent active:scale-95 transition-all hover:text-white  hover:bg-neutral-800"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
