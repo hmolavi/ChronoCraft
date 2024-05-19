@@ -21,8 +21,8 @@
 ChronoCraft is an innovative timeline creation software that revolutionizes the way we visualize and analyze chronological data. Our team is dedicated to providing a user-friendly tool that empowers users to effortlessly generate timelines for any search result. With ChronoCraft, you can transform raw data into captivating stories, uncovering valuable insights and patterns along the way. Whether you're a researcher, historian, or simply curious about the passage of time, ChronoCraft is the ultimate companion for crafting data into compelling narratives.
 
 ## 💡 Inspiration 💡
-Our inspiration for ChronoCraft stems from the captivating challenge of visualizing and analyzing chronological data. We were intrigued by the limitations of existing timeline creation tools, which often lacked user-friendly interfaces and automation capabilities. To address these shortcomings, we embarked on a mission to develop a software that not only generates timelines based on the provided dataset, but also empowers users to effortlessly customize and annotate them. By simplifying the process of creating timelines, our goal is to unlock valuable insights and patterns hidden within the passage of time.
 
+The resource that became our core inspiration was the ["Timeline of Poets & Scientists" infographic Instagram post](https://www.instagram.com/p/C636c9PgOZM) designed by [Mohammad Rasoulipour](https://www.instagram.com/mo.rasoulipour/), which Amin spotted and shared with the group. This inspired us to work on a history vizualization project, where at a higher level, ChronoCraft attempts to do the challenge of identifying, analyzing, and illustrating chronological data. We were intrigued by the limitations of existing timeline creation tools—even certain Wikipedia pages that aimed to offer timelines—due to often lacking user-friendly interfaces and automation capabilities. To address these shortcomings, we developed a software that not only generates timelines based on the provided dataset, but also enables customization and annotation of them. By simplifying the process of creating timelines, our goal is to unlock valuable insights and patterns hidden within the passage of time, as an accessible educational tool.
 ## ⚙️ What It Does ⚙️
 Our main objectives for ChronoCraft are:
 - Develop an intuitive and interactive user interface for creating and customizing timelines.
@@ -61,7 +61,7 @@ While our initial focus is on creating a functional prototype for the hackathon,
 ## 💙 About the Team 💙
 Hossein Molavi, a third-year Computer Engineering student at the University of Waterloo, is deeply fascinated by the intricate dance between computer hardware and software algorithms. His passion lies in exploring frontiers where these realms converge
 
-Amin
+Amin Mojtahed, a third-year computer science major and psychology minor specializing in human-computer interaction, has the ambition to contribute to humanities-themed projects through technical skills.
 
 Beomsoo
 
