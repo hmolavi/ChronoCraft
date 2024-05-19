@@ -1,7 +1,14 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24">
-      <h1 className="w-full h-full text-center">ChronoCraft</h1>
+    <main className="flex min-h-screen flex-row items-center justify-center">
+      <div className="max-w-[320px] p-4 flex h-full bg-slate-50">
+        <div className="w-full h-full">
+          <p>Go Home</p>
+          <input placeholder="Insert Query" />
+          <button>Browse</button>
+        </div>
+      </div>
+      <div className="h-screen w-full"></div>
     </main>
   );
 }

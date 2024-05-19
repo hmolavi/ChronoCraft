@@ -18,10 +18,10 @@
 
 
 ## ✍️ Introduction ✍️
-In this hackathon project proposal, we present ChronoCraft, a timeline creation software that generates timelines for a given dataset. Our team aims to provide a user-friendly tool that allows users to visualize and analyze chronological data in a meaningful way.
+ChronoCraft is an innovative timeline creation software that revolutionizes the way we visualize and analyze chronological data. Our team is dedicated to providing a user-friendly tool that empowers users to effortlessly generate timelines for any search result. With ChronoCraft, you can transform raw data into captivating stories, uncovering valuable insights and patterns along the way. Whether you're a researcher, historian, or simply curious about the passage of time, ChronoCraft is the ultimate companion for crafting data into compelling narratives.
 
 ## 💡 Inspiration 💡
-Our inspiration for ChronoCraft comes from the need to effectively visualize and analyze chronological data. We noticed that existing timeline creation tools often lack user-friendly interfaces and automation capabilities. We aim to address these limitations by developing a software that not only generates timelines based on the provided dataset, but also allows users to easily customize and annotate them. By simplifying the process of creating timelines, we hope to empower users to gain valuable insights from their chronological data.
+Our inspiration for ChronoCraft stems from the captivating challenge of visualizing and analyzing chronological data. We were intrigued by the limitations of existing timeline creation tools, which often lacked user-friendly interfaces and automation capabilities. To address these shortcomings, we embarked on a mission to develop a software that not only generates timelines based on the provided dataset, but also empowers users to effortlessly customize and annotate them. By simplifying the process of creating timelines, our goal is to unlock valuable insights and patterns hidden within the passage of time.
 
 ## ⚙️ What It Does ⚙️
 Our main objectives for ChronoCraft are:
@@ -39,12 +39,16 @@ To achieve our objectives, we will follow these steps:
 5. Document the development process and provide clear instructions for users.
 
 ## 📐 Built With 🔬
-
-* [![Next][Next.js]][Next-url]
->more to be added
+- [![Next.js](https://img.shields.io/badge/-Next.js-black?style=flat&logo=next.js&logoColor=white)](Next-url)
+- [![Neorelo](https://img.shields.io/badge/-Neorelo-yellow?style=flat&logo=neorelo&logoColor=white)](Neorelo-url)
+- [![React](https://img.shields.io/badge/-React-blue?style=flat&logo=react&logoColor=white)](React-url)
+- [![OpenAI](https://img.shields.io/badge/-OpenAI-333333?style=flat&logo=openai&logoColor=FFD300)](OpenAI-url)
+- [![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)](TailwindCSS-url)
+- [![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)](JavaScript-url)
 
 ## ⚠️ Challenges we ran into ⚠️
-*Some challenges*
+- Learning Neorelo was an interesting and exciting journey. We had to familiarize ourselves with the Neorelo Schema Editor, understand its documentation, and overcome unfamiliar erros. It required time and effort to become proficient in using Neorelo effectively for our project. However, the learning process was rewarding as it expanded our knowledge and skills in working with this new awesome tool.
+
 
 ## ⏭️ Future Plans for ChronoCraft ⏭️
 While our initial focus is on creating a functional prototype for the hackathon, we have ambitious plans for the future of ChronoCraft. Some of our future plans include:
