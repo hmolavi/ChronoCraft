@@ -23,6 +23,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
+    "timelinejs-react": "^1.1.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
