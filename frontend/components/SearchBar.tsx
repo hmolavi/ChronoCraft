@@ -22,7 +22,7 @@ export const SearchBar = () => {
           onClick={() => {
             setLoading(true);
             console.log("Search Query:", searchQuery);
-            getSearchEvent({ queryTopic: searchQuery, numEvents: 8  })
+            getSearchEvent({ queryTopic: searchQuery, numEvents: 5 })
               .then((res) => {
                 console.log(res);
               })

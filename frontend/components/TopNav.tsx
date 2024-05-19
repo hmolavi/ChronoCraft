@@ -1,6 +1,6 @@
 export const TopNav = () => {
   return (
-    <nav className="fixed w-full top-0 z-10 flex items-center justify-between flex-wrap p-4">
+    <div className="fixed w-full top-0 z-10 flex items-center justify-between flex-wrap p-4">
       <div className="flex items-center flex-shrink-0 text-neutral-800 mr-6">
         <span className="font-semibold text-xl tracking-tight">
           ChronoCraft
@@ -39,6 +39,6 @@ export const TopNav = () => {
           Continue with Google
         </a>
       </div>
-    </nav>
+    </div>
   );
 };
