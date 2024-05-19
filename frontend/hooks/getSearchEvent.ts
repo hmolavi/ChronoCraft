@@ -40,7 +40,7 @@ async function getSearchEvent({ queryTopic, numEvents }: Props) {
   console.log("Calling the OpenAI API");
   const systemMessage =
     "You are an assistant that only writes JSON. Do not write normal text.";
-  const query = `Give me a list of ${numEvents} of the most significant historical events during ${queryTopic} formatted in the following way. Only fill in the brackets:\n {"start_date": {"year": (start year), "month": (start month), "day": (start day),}, "media": { "url": "", "caption": "", "link": "",}, "end_date": { "year": (end year), "month": (end month), "day": (end day),}, "unique_id": "", "text": { "headline": "(title of the event)", "text": "(concise summary of the event)",}, "background": {},}`;
+  const query = `Please generate a list of ${numEvents} of the most significant historical events related to "${queryTopic}". \n\nFormat each event strictly as follows:\n\n{\n  "start_date": {"year": (start year), "month": (start month), "day": (start day)},\n  "media": {"url": "", "caption": "", "link": ""},\n  "end_date": {"year": (end year), "month": (end month), "day": (end day)},\n  "unique_id": "", \n  "text": {\n    "headline": "(Title of the Event)",\n    "text": "(Concise Summary of the Event)"\n  },\n  "background": {}\n}`;
 
   // For 0-10
   // What is the sentiment of this tweet with a value between 0 and 10 (10 being its very positive)?
