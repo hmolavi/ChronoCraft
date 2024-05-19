@@ -23,7 +23,7 @@ async function getSearchEvent({ queryTopic, numEvents }: Props) {
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer sk-proj-fkCorZFkJuItTKn7H1juT3BlbkFJCjZEQJJBPQcIR4myIWEu`,
+          Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
         },
       }
     );

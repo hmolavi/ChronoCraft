@@ -1,5 +1,6 @@
 "use client";
 
+import { SearchBar } from "@/components/SearchBar";
 import Timeline from "timelinejs-react";
 
 const events: Slide[] = [
@@ -81,15 +82,11 @@ const TimelinePage = () => {
   return (
     <div>
       <h1>My Timeline</h1>
-      <div className="max-w-[320px] p-4 flex h-full bg-slate-50">
-        <div className="w-full h-full">
-          <p>When do you want to travel to?</p>
-          <input placeholder="Insert Query" />
-          <button>Browse</button>
-        </div>
-      </div>
+      <SearchBar />
       <Timeline
-        target={<div className="timeline" style={{ height: 600 }} />}
+        target={
+          <div className="timeline" style={{ height: "calc(100vh - 240px)" }} />
+        }
         events={events}
         options={{
           timenav_position: "top",
