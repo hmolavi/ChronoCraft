@@ -21,7 +21,7 @@ const useGetSearchEvent = () => {
         { role: "system", content: systemMessage },
         { role: "user", content: query },
       ],
-      temperature: 1,
+      temperature: 0.6,
       max_tokens: 1000,
       top_p: 1.0,
       frequency_penalty: 0.0,
