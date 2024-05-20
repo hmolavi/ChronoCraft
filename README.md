@@ -8,6 +8,8 @@
     <a href="https://chronocraft.wiki">www.chronocraft.wiki</a>
     <br />
     <a href="https://youtu.be/CsF0szB0zlw">Demo</a>
+    <br />
+    <a href="https://taikai.network/hackbox/hackathons/hawkhacks/projects/clwczw3d10ckuz901uiepeat7/idea">TaiKai Post</a>
   </p>
 </div>
 <div align="center">
