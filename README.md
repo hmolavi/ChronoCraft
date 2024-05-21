@@ -1,15 +1,18 @@
 <br />
 <div align="center">
-  <img src="assets/logo.jpeg" alt="Logo" height="185">
+
+  <img src="assets/BannerImage.png" alt="Banner" style="margin-bottom: 20; ">
+
+  <img src="assets/logo.jpeg" alt="Logo" style="border-radius: 50%; max-height: 185">
   <h3 align="center">ChronoCraft</h3>
   <p align="center">
     Crafting Data into Stories, One Timeline at a Time
     <br />
     <a href="https://chronocraft.wiki">www.chronocraft.wiki</a>
     <br />
-    <a href="https://youtu.be/CsF0szB0zlw">Demo</a>
+    <a href="https://youtu.be/CsF0szB0zlw">Demo [YT Video]</a>
     <br />
-    <a href="https://taikai.network/hackbox/hackathons/hawkhacks/projects/clwczw3d10ckuz901uiepeat7/idea">TaiKai Post</a>
+    <a href="https://taikai.network/hackbox/hackathons/hawkhacks/projects/clwczw3d10ckuz901uiepeat7/idea">Hackathon Post [TaiKai]</a>
   </p>
 </div>
 <div align="center">
@@ -35,9 +38,9 @@ We utilize AI to summarize and filter information effortlessly. Additionally, th
 
 For the frontend, we chose ReactJS and NextJS as our powerful and flexible JavaScript frameworks. ReactJS provides a component-based architecture, while NextJS offers server-side rendering and routing capabilities, enhancing the performance and user experience of the application.
 
-We also utilized TimelineJS for creating a cleaner and more visually appealing user interface.On the backend, we utilized Neurelo for managing and deploying serverless functions, allowing us to easily handle backend logic and generate APIs.
+We also utilized TimelineJS for creating a cleaner and more visually appealing user interface. On the backend, we utilized Neurelo for managing and deploying serverless functions, allowing us to easily handle backend logic and generate APIs.
 
-We also leveraged MongoDB as our database using MongoDB Atlas, a fully managed cloud database service, to efficiently store and retrieve data.
+We also leveraged MongoDB as our database using MongoDB Atlas, a fully managed cloud database service, to efficiently store and retrieve data. Last but not least, the implementation of the Adobe Express add-on was with Node.js.
 
 By combining these technologies, we created a robust and scalable application that delivers a seamless user experience while effectively handling data management and processing.
 
@@ -54,33 +57,34 @@ Finally, we deployed our application to our application to the domain name we go
 
 ## 🏆 Accomplishments That We're Proud Of 🏆
 
-- We are particularly proud of completing a Full Stack app that seamlessly
+- We are particularly proud of completing a Full Stack app that works seamlessly. Cool tool to play with!
 - Learning Neurelo was an interesting and exciting journey. We had to familiarize ourselves with the Neurelo Schema Editor, understand its documentation, and overcome unfamiliar erros. It required time and effort to become proficient in using Neurelo effectively for our project. However, the learning process was rewarding as it expanded our knowledge and skills in working with this new awesome tool.
 
 ## ⚠️ Challenges we ran into ⚠️
 
 - Initially connecting MongoDB to Neurelo was giving us problems and would not connect even though we followed the documentation. Turns out there was a missing step that the sponsor representative pointed out, if not for him we would have spent much more time trying to figure out the issue.
 - Not all of us have SQL experience and none of us have used MongoDB before so we were faced with challenge of how to make a relations and references in a 'non-relational' database.
+- While setting up an Adobe Express add-on template and publishing it was easy, it was a comparatively heavier challenge to embed ChronoCraft properly, hence the need for staying in beta.
 
 ## ⏭️ Future Plans for ChronoCraft ⏭️
 
 While our initial focus is on creating a functional prototype for the hackathon, we have ambitious plans for the future of ChronoCraft. Some of our future plans include:
-
 - Due to the numerous issues we had with the frontend api calls, we were not able to make a complete implementation with the database via api. If given more time we would first finish the development of api calls.
 - Scaling the application to a larger user base and integrating with platforms like Wikipedia, allowing for the chronological ordering of information.
-  Partnership with Adobe Express; enhancing the software with advanced visualization options such as interactive charts and graphs.
+- Partnership with Adobe Express; enhancing the software with advanced visualization options such as interactive charts and graphs.
 - Currently, the database is utilized to store users' search history. However, there is great potential for leveraging the gathered data in various ways in the future.
 - Expanding the software to support different languages and localization.
+- Better integration for tools such as Adobe Express, and increasing the interaction level as seamless as drag-and-drop of the timeline elements.
 
 ## 💙 About the Team 💙
 
-Hossein Molavi, a 3rd year Computer Engineering student at the University of Waterloo, is deeply fascinated by the intricate dance between computer hardware and software algorithms. His passion lies in exploring frontiers where these realms converge.
+Hossein Molavi [[Devpost]](https://devpost.com/Thehoos) [[LinkedIn]](https://www.linkedin.com/in/hmolavi/), a 3rd year Computer Engineering student at the University of Waterloo, is deeply fascinated by the intricate dance between computer hardware and software algorithms. His passion lies in exploring frontiers where these realms converge.
 
-Amin Mojtahed, a third-year computer science major and psychology minor specializing in human-computer interaction, has the ambition to contribute to humanities-themed projects through technical skills.
+Amin Mojtahed [[Devpost]](https://devpost.com/mamin-mojtahed) [[LinkedIn]](https://www.linkedin.com/in/mamin-mojtahed/), a third-year computer science major and psychology minor specializing in human-computer interaction, has the ambition to contribute to humanities-themed projects through technical skills.
 
-Beomsoo, a Human Interface Designer and Frontend Engineer based in Toronto. Love to solve complex problems with design and technology. Let's put a dent in the universe.
+Beomsoo Son [[LinkedIn]](https://www.linkedin.com/in/beomsoo/), a Human Interface Designer and Frontend Engineer based in Toronto. Love to solve complex problems with design and technology. Let's put a dent in the universe.
 
-Abtin Abbaspour, a third-year Geomatics student at the University of Waterloo, experienced data scientist and entreperneur, interested in ML, DL, and NLP.
+Abtin Abbaspour [[LinkedIn]](https://www.linkedin.com/in/abtin-abbaspour/), a third-year Geomatics student at the University of Waterloo, experienced data scientist and entreperneur, interested in ML, DL, and NLP.
 
 ---
 
