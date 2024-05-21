@@ -2,9 +2,8 @@
 <div align="center">
 
   <img id="banner" src="assets/BannerImage.png" alt="Banner">
-  
   <br/>
-
+  <br/>
   <img id="logo" src="assets/logo.jpeg" alt="Logo" height="185">
   <h3 align="center">ChronoCraft</h3>
   <p align="center">
