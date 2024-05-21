@@ -1,9 +1,11 @@
 <br />
 <div align="center">
 
-  <img src="assets/BannerImage.png" alt="Banner" style="margin-bottom: 20; ">
+  <img id="banner" src="assets/BannerImage.png" alt="Banner">
+  
+  <br/>
 
-  <img src="assets/logo.jpeg" alt="Logo" style="border-radius: 50%; max-height: 185">
+  <img id="logo" src="assets/logo.jpeg" alt="Logo" height="185">
   <h3 align="center">ChronoCraft</h3>
   <p align="center">
     Crafting Data into Stories, One Timeline at a Time
